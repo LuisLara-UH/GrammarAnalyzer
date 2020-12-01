@@ -33,7 +33,6 @@ def Execute_LR1(G):
         items_to_conflict_way = FindConflict(Item(parser.G.startSymbol.productions[0], 0), automaton, items_conflict_way[0])
         
         items_to_expand = items_to_conflict_way + items_conflict_way
-        #print(items_to_expand)
 
         conflict_string = FindConflictString(items_to_expand)
 
